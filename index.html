@@ -5,39 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Songwriting Club</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>The Songwriting Club</h1>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#posts">Submit</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback for Your Songs</a></li>
+                <li><a href="#analysis">Song Analysis</a></li>
+            </ul>
         </nav>
+        <h1>The Songwriting Club</h1>
     </header>
     <main>
-        <section id="home">
-            <h2>Welcome to The Songwriting Club!</h2>
-            <p>Your creative space for sharing and receiving feedback on your music. Post your songs, get constructive criticism, and be part of a supportive songwriting community.</p>
-        </section>
         <section id="about">
-            <h2>About Us</h2>
-            <p>The Songwriting Club is a community for songwriters of all levels. We provide a platform where you can share your compositions, receive feedback from fellow musicians, and connect with others passionate about songwriting.</p>
-            <img src="music-notes.png" alt="Music Notes">
+            <h2>About</h2>
+            <p>Welcome to The Songwriting Club! This is a community where songwriters come together to share their music, get feedback, and analyze top hits. Whether you’re here to showcase your latest track or dive deep into song analysis, you’re in the right place!</p>
         </section>
-        <section id="posts">
-            <h2>Submit Your Song</h2>
-            <p>Use the form below to submit your song for feedback. We look forward to hearing your work!</p>
-            <form id="submission-form">
-                <label for="title">Song Title:</label>
-                <input type="text" id="title" name="title" required>
-                <label for="date">Submission Date:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="content">Song Content:</label>
-                <textarea id="content" name="content" rows="5" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="feedback"></div>
+        
+        <section id="feedback">
+            <h2>Feedback for Your Songs</h2>
+            <p>Want fresh perspectives on your latest song? Post your song here and get constructive feedback from fellow songwriters. Share your work and see what others think!</p>
+            <div class="post-section">
+                <form id="feedbackForm">
+                    <label for="feedbackTitle">Song Title:</label>
+                    <input type="text" id="feedbackTitle" name="title" required>
+                    <label for="feedbackAudio">Upload MP3:</label>
+                    <input type="file" id="feedbackAudio" name="audio" accept="audio/mp3" required>
+                    <label for="feedbackDescription">Description:</label>
+                    <textarea id="feedbackDescription" name="description" rows="4" required></textarea>
+                    <button type="submit">Post Feedback</button>
+                </form>
+                <div id="feedbackPosts"></div>
+            </div>
+        </section>
+        
+        <section id="analysis">
+            <h2>Song Analysis</h2>
+            <p>Analyze your favorite songs and understand what makes them top the charts. Post a song for analysis or dive into others’ submissions to see different perspectives and insights!</p>
+            <div class="post-section">
+                <form id="analysisForm">
+                    <label for="analysisTitle">Song Title:</label>
+                    <input type="text" id="analysisTitle" name="title" required>
+                    <label for="analysisSource">YouTube Link or Upload MP3:</label>
+                    <input type="text" id="analysisSource" name="source" placeholder="YouTube link or MP3 upload" required>
+                    <input type="file" id="analysisAudio" name="audio" accept="audio/mp3">
+                    <label for="analysisDescription">Description:</label>
+                    <textarea id="analysisDescription" name="description" rows="4" required></textarea>
+                    <button type="submit">Post Analysis</button>
+                </form>
+                <div id="analysisPosts"></div>
+            </div>
         </section>
     </main>
     <footer>

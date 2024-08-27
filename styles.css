@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Moderustic', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+header {
+    background-color: #d4a373; /* Light brown */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main Section Styles */
+main {
+    flex: 1; /* Allow main content to expand and fill available space */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#about {
+    background-color: #f1e4d3; /* Beige */
+}
+
+#feedback {
+    background-color: #e8d7c4; /* Light brown */
+}
+
+#analysis {
+    background-color: #e1bf93; /* Beige */
+}
+
+h2 {
+    color: #6a4b41; /* Darker brown */
+}
+
+/* Form Styles */
+.post-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.post-section input, .post-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.post-section button {
+    background-color: #6a4b41; /* Darker brown */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post-section button:hover {
+    background-color: #543b2f; /* Even darker brown */
+}
+
+/* Post List Styles */
+#feedbackPosts, #analysisPosts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.post audio {
+    width: 100%;
+}
+
+.post p.timestamp {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.post button.delete {
+    background-color: #e74c3c; /* Red */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post button.delete:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d4a373; /* Light brown */
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
